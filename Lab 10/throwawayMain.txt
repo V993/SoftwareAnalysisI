@@ -1,0 +1,28 @@
+    
+main() for C
+            //movie declaration
+            Movie movie1 = {"Back to the Future", COMEDY, 116};
+            Movie movie2 = {"Black Panther", ACTION, 134};
+            Movie movie3 = {"Blade Runner", DRAMA, 126};
+            Movie movie4 = {"Blazin' Saddles", COMEDY, 131};
+
+            //time declaration
+            Time morn = {9, 15};
+            Time noon = {12, 15};
+            Time afterN = {14, 15};
+            Time eve = {16, 45};
+            Time mid = {21, 45};
+
+            //timeslot definition
+            TimeSlot morning = {movie1, morn};
+            TimeSlot daytime = {movie2, noon};
+            TimeSlot evening = {movie2, eve};
+            TimeSlot afternoon = {movie4, afterN};
+            TimeSlot midnight = {movie3, mid};
+
+            //cout timeslots and movies
+            printTimeSlot(morning); cout << endl;
+            printTimeSlot(daytime); cout << endl;
+            printTimeSlot(evening); cout << endl;
+            printTimeSlot(afternoon); cout << endl;
+            printTimeSlot(midnight); cout << endl;
